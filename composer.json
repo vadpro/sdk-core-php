@@ -1,14 +1,14 @@
 {
-    "name": "paypal/sdk-core-php",
+    "name": "vadpro/sdk-core-php",
     "description": "PayPal Core SDK for PHP",
     "keywords": ["paypal", "php", "sdk"],
     "type": "library",
-    "homepage": "https://github.com/paypal/sdk-core-php",
+    "homepage": "https://github.com/vadpro/sdk-core-php",
     "license": "Apache2",
     "authors": [
         {
             "name": "PayPal",
-            "homepage": "https://github.com/paypal/sdk-core-php/contributors"
+            "homepage": "https://github.com/vadpro/sdk-core-php/contributors"
         }
     ],
     "require": {
