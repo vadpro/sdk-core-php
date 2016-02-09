@@ -101,10 +101,12 @@ abstract class PPMessage
 					}
 				}				
 			} else { // one object
-				$this->{$property} = new $type();
-				$this->{$property}->init(PPUtils::filterKeyPrefix($filtered, '.')); // unprefix
-				if(array_key_exists("", $filtered)) {
-					$this->{$property}->value = urldecode($filtered[""]);
+				if($type != 'string') {
+					$this->{$property} = new $type();
+					$this->{$property}->init(PPUtils::filterKeyPrefix($filtered, '.')); // unprefix
+					if (array_key_exists("", $filtered)) {
+						$this->{$property}->value = urldecode($filtered[""]);
+					}
 				}
 			}
 		}
